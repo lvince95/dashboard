@@ -71,7 +71,7 @@ export const RegionGroup = () => {
             <div
               className={cn(
                 project.bgColor,
-                "flex w-16 flex-shrink-0 items-center justify-center rounded-l-md border-b border-l border-t border-white/5 text-sm font-medium text-white",
+                "flex w-16 shrink-0 items-center justify-center rounded-l-md border-y border-l border-white/5 text-sm font-medium text-white",
                 index === region ? "border-gray-400" : "opacity-50"
               )}
             >
@@ -79,7 +79,7 @@ export const RegionGroup = () => {
             </div>
             <div
               className={cn(
-                "flex flex-1 items-center justify-between truncate rounded-r-md border-b border-r border-t border-white/5 bg-gray-700/30",
+                "flex flex-1 items-center justify-between truncate rounded-r-md border-y border-r border-white/5 bg-gray-700/30",
                 index === region ? "border-gray-400" : "opacity-50"
               )}
             >

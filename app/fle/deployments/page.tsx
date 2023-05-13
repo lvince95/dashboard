@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <>
       <main className="lg:pr-96">
-        <header className="flex items-center justify-between border-b border-white/5 px-4 py-4 sm:px-6 sm:py-6 lg:px-8">
+        <header className="flex items-center justify-between border-b border-white/5 p-4 sm:p-6 lg:px-8">
           <h1 className="text-base font-semibold leading-7 text-white">
             Deployments
           </h1>
@@ -20,7 +20,7 @@ export default function HomePage() {
           {deployments.map((deployment) => (
             <li
               key={deployment.id}
-              className="relative flex items-center space-x-4 px-4 py-4 sm:px-6 lg:px-8"
+              className="relative flex items-center space-x-4 p-4 sm:px-6 lg:px-8"
             >
               <div className="min-w-0 flex-auto">
                 <div className="flex items-center gap-x-3">

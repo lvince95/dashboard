@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { activityItems } from "@/config/constants";
 
 export default function RecentActivity() {
@@ -6,10 +8,12 @@ export default function RecentActivity() {
       {activityItems.slice(0, 4).map((item) => (
         <li key={item.commit} className="py-4">
           <div className="flex items-center gap-x-3">
-            <img
+            <Image
               src={item.user.imageUrl}
               alt=""
-              className="h-6 w-6 flex-none rounded-full bg-gray-800"
+              className="flex-none rounded-full bg-gray-800"
+              height={24}
+              width={24}
             />
             <h3 className="flex-auto truncate text-sm font-semibold leading-6 text-gray-300">
               {item.user.name}

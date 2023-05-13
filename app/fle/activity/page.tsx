@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { activityItems } from "@/config/constants";
 import { cn } from "@/lib/utils";
 import { PaginationFooter } from "@/components/ui/pagination-footer";
@@ -55,10 +57,12 @@ export default async function ActivityPage() {
             <tr key={item.commit}>
               <td className="py-4 pl-4 pr-8 sm:pl-6 lg:pl-8">
                 <div className="flex items-center gap-x-4">
-                  <img
+                  <Image
                     src={item.user.imageUrl}
                     alt=""
-                    className="h-8 w-8 rounded-full bg-gray-800"
+                    className="rounded-full bg-gray-800"
+                    height={32}
+                    width={32}
                   />
                   <div className="truncate text-sm font-medium leading-6 text-white">
                     {item.user.name}

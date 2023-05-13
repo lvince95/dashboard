@@ -77,7 +77,7 @@ export default function Page() {
           </form>
 
           <p className="mt-10 text-center text-sm text-gray-400">
-            Can't log in?{" "}
+            Can&apos;t log in?{" "}
             <a
               href="#"
               className="font-semibold leading-6 text-indigo-400 hover:text-indigo-300"

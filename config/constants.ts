@@ -1,6 +1,4 @@
 import {
-  ArrowRightOnRectangleIcon,
-  ChartBarSquareIcon,
   Cog6ToothIcon,
   FolderIcon,
   ServerIcon,
