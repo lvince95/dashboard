@@ -16,25 +16,25 @@ import { DoughnutChart } from "@/components/doughnut-chart";
 const stats = [
   {
     name: "Revenue",
-    value: "$405,091.00",
+    value: "$40,505",
     change: "+4.75%",
     changeType: "positive",
   },
   {
     name: "Costs",
-    value: "$12,787.00",
+    value: "$1,200",
     change: "+54.02%",
     changeType: "negative",
   },
   {
     name: "Outstanding",
-    value: "$245,988.00",
+    value: "$2,450",
     change: "-1.39%",
     changeType: "positive",
   },
   {
     name: "Expenses",
-    value: "$30,156.00",
+    value: "$10,156",
     change: "+10.18%",
     changeType: "negative",
   },
