@@ -26,7 +26,7 @@ ChartJS.register(
   Legend
 );
 
-export const options = {
+const options = {
   maintainAspectRatio: false,
   responsive: true,
   plugins: {

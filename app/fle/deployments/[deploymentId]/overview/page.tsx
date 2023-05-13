@@ -28,7 +28,7 @@ ChartJS.register(
 
 const labels = ["January", "February", "March", "April", "May", "June", "July"];
 
-export const data = {
+const data = {
   labels,
   datasets: [
     {
@@ -83,7 +83,7 @@ const animations = {
   },
 };
 
-export const options = {
+const options = {
   maintainAspectRatio: false,
   responsive: true,
   plugins: {
