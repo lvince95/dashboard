@@ -2,6 +2,11 @@ type OverviewLayoutProps = {
   children: React.ReactNode;
 };
 
+export const metadata = {
+  title: "FLE - Overview",
+  description: "Overview of the data",
+};
+
 export default function OverviewLayout({ children }: OverviewLayoutProps) {
   return (
     <>

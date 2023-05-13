@@ -7,6 +7,11 @@ type DashboardLayoutProps = {
   children: React.ReactNode;
 };
 
+export const metadata = {
+  title: "FLE - Deployment",
+  description: "Deployment Details",
+};
+
 export default function DashboardLayout({
   params,
   children,
