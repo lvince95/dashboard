@@ -46,7 +46,7 @@ export default function SettingsPage() {
         {/* Settings forms */}
         <div className="divide-y divide-white/5">
           <div className="relative grid max-w-7xl grid-cols-1 gap-x-8 gap-y-10 px-4 py-16 sm:px-6 md:grid-cols-3 lg:px-8">
-            <div className="sticky top-24 self-start">
+            <div className="self-start md:sticky md:top-24">
               <h2 className="text-base font-semibold leading-7 text-white">
                 Personal Information
               </h2>
@@ -189,7 +189,7 @@ export default function SettingsPage() {
           </div>
 
           <div className="relative grid max-w-7xl grid-cols-1 gap-x-8 gap-y-10 px-4 py-16 sm:px-6 md:grid-cols-3 lg:px-8">
-            <div className="sticky top-24 self-start">
+            <div className="self-start md:sticky md:top-24">
               <h2 className="text-base font-semibold leading-7 text-white">
                 Residential Address
               </h2>
@@ -340,7 +340,7 @@ export default function SettingsPage() {
           </div>
 
           <div className="relative grid max-w-7xl grid-cols-1 gap-x-8 gap-y-10 px-4 py-16 sm:px-6 md:grid-cols-3 lg:px-8">
-            <div className="sticky top-24 self-start">
+            <div className="self-start md:sticky md:top-24">
               <h2 className="text-base font-semibold leading-7 text-white">
                 Change password
               </h2>
@@ -418,7 +418,7 @@ export default function SettingsPage() {
           </div>
 
           <div className="relative grid max-w-7xl grid-cols-1 gap-x-8 gap-y-10 px-4 py-16 sm:px-6 md:grid-cols-3 lg:px-8">
-            <div className="sticky top-24 self-start">
+            <div className="self-start md:sticky md:top-24">
               <h2 className="text-base font-semibold leading-7 text-white">
                 Log out other sessions
               </h2>
@@ -461,7 +461,7 @@ export default function SettingsPage() {
           </div>
 
           <div className="relative grid max-w-7xl grid-cols-1 gap-x-8 gap-y-10 px-4 py-16 sm:px-6 md:grid-cols-3 lg:px-8">
-            <div className="sticky top-24 self-start">
+            <div className="self-start md:sticky md:top-24">
               <h2 className="text-base font-semibold leading-7 text-white">
                 Delete account
               </h2>

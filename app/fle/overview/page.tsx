@@ -143,7 +143,7 @@ export default function Page() {
                 <GlobeAmericasIcon className="h-8 w-8 flex-none text-gray-400" />
                 <div>
                   <p className="text-md px-4 font-semibold text-gray-300">
-                    North America
+                    America
                   </p>
                   <p className="px-4 text-sm  text-gray-400/50">WF-NA</p>
                 </div>

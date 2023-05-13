@@ -14,7 +14,7 @@ export const navigation = [
   { name: "Settings", href: "/fle/settings", icon: Cog6ToothIcon },
 ];
 export const teams = [
-  { id: 1, name: "FLE", href: "/overview", initial: "F", current: false },
+  { id: 1, name: "FLE", href: "/fle/overview", initial: "F", current: false },
 ];
 
 export const stats = [

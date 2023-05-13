@@ -39,7 +39,7 @@ export default function HomePage() {
                       <span className="truncate">{deployment.teamName}</span>
                       <span className="text-gray-400">/</span>
                       <span className="whitespace-nowrap">
-                        {deployment.projectName}
+                        {deployment.id.toUpperCase()}
                       </span>
                       <span className="absolute inset-0" />
                     </Link>
