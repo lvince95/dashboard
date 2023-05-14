@@ -81,7 +81,10 @@ export const MobileSidebar = ({
                 </div>
               </Transition.Child>
               <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 ring-1 ring-white/10">
-                <Link href="/home" className="flex h-16 shrink-0 items-center">
+                <Link
+                  href="/fle/overview"
+                  className="flex h-16 shrink-0 items-center"
+                >
                   <OrstedIcon className="h-8 w-auto" />
                 </Link>
                 <nav className="flex flex-1 flex-col">
