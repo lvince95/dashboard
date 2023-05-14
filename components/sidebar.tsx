@@ -15,7 +15,7 @@ export const Sidebar = () => {
   return (
     <div className="hidden xl:fixed xl:inset-y-0 xl:z-50 xl:flex xl:w-72 xl:flex-col">
       <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-black/10 px-6 ring-1 ring-white/5">
-        <Link href="/home" className="flex h-16 shrink-0 items-center">
+        <Link href="/fle/overview" className="flex h-16 shrink-0 items-center">
           <OrstedIcon className="h-8 w-auto" />
         </Link>
         <nav className="flex flex-1 flex-col">

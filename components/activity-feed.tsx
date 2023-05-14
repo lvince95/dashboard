@@ -11,7 +11,7 @@ export const ActivityFeed = () => {
           Activity feed
         </h2>
         <Link
-          href="/activity"
+          href="/fle/activity"
           className="text-sm font-semibold leading-6 text-indigo-400"
         >
           View all
