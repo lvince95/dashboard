@@ -1,4 +1,5 @@
 import {
+  EllipsisVerticalIcon,
   GlobeAltIcon,
   GlobeAmericasIcon,
   GlobeAsiaAustraliaIcon,
@@ -102,99 +103,110 @@ export default function Page() {
 
         {/* 2nd col */}
         <div className="col-span-1 flex flex-col gap-4 rounded-md bg-gray-700/20 p-4">
-          <h2 className="pt-2 text-gray-400">Wind Farm Health</h2>
-          {/* <p className="-mt-4 px-4 text-gray-400/50">Average Health: 38%</p> */}
+          <div className="flex justify-between">
+            <h2 className="pt-2 text-gray-400">Wind Farm Health</h2>
+            <EllipsisVerticalIcon className="h-6 w-6 self-end text-gray-400" />
+          </div>
+          <p className="-mt-4 text-sm text-gray-400/50">Average Health: 32%</p>
           <div className="mt-auto flex flex-col gap-4">
             <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                <GlobeEuropeAfricaIcon className="h-8 w-8 flex-none text-gray-400" />
-
+              <div className="flex">
+                <GlobeEuropeAfricaIcon className="h-10 w-10 flex-none text-sky-400" />
                 <div>
-                  <p className="text-md px-4 font-semibold text-gray-300">
+                  <p className="px-4 text-sm font-semibold text-gray-300">
                     Europe
                   </p>
                   <p className="px-4 text-sm  text-gray-400/50">WF-EU</p>
                 </div>
               </div>
-              <div className="w-[50%]">
+              <div className="flex w-[50%] items-center gap-4 text-gray-400">
                 <Progress className="bg-sky-400" value={65} />
+                65%
               </div>
             </div>
             <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                <GlobeAsiaAustraliaIcon className="h-8 w-8 flex-none text-gray-400" />
+              <div className="flex">
+                <GlobeAsiaAustraliaIcon className="h-10 w-10 flex-none text-green-500" />
                 <div>
-                  <p className="text-md px-4 font-semibold text-gray-300">
+                  <p className="px-4 text-sm font-semibold text-gray-300">
                     Asia
                   </p>
                   <p className="px-4 text-sm  text-gray-400/50">WF-AS</p>
                 </div>
               </div>
-              <div className="w-[50%]">
+              <div className="flex w-[50%] items-center gap-4 text-gray-400">
                 <Progress className="bg-green-500" value={49} />
+                49%
               </div>
             </div>
             <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                <GlobeAmericasIcon className="h-8 w-8 flex-none text-gray-400" />
+              <div className="flex">
+                <GlobeAmericasIcon className="h-10 w-10 flex-none text-purple-500" />
                 <div>
-                  <p className="text-md px-4 font-semibold text-gray-300">
+                  <p className="px-4 text-sm font-semibold text-gray-300">
                     America
                   </p>
                   <p className="px-4 text-sm  text-gray-400/50">WF-NA</p>
                 </div>
               </div>
-              <div className="w-[50%]">
+              <div className="flex w-[50%] items-center gap-4 text-gray-400">
                 <Progress className="bg-purple-500" value={38} />
+                38%
               </div>
             </div>
             <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                <GlobeAltIcon className="h-8 w-8 flex-none text-gray-400" />
+              <div className="flex">
+                <GlobeAltIcon className="h-10 w-10 flex-none text-indigo-400" />
                 <div>
-                  <p className="text-md px-4 font-semibold text-gray-300">
+                  <p className="px-4 text-sm font-semibold text-gray-300">
                     Taiwan
                   </p>
                   <p className="px-4 text-sm  text-gray-400/50">WF-TW</p>
                 </div>
               </div>
-              <div className="w-[50%]">
+              <div className="flex w-[50%] items-center gap-4 text-gray-400">
                 <Progress className="bg-indigo-400" value={18} />
+                18%
               </div>
             </div>
             <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                <GlobeAltIcon className="h-8 w-8 flex-none text-gray-400" />
+              <div className="flex">
+                <GlobeAltIcon className="h-10 w-10 flex-none text-yellow-500" />
                 <div>
-                  <p className="text-md px-4 font-semibold text-gray-300">
+                  <p className="px-4 text-sm font-semibold text-gray-300">
                     Japan
                   </p>
                   <p className="px-4 text-sm  text-gray-400/50">WF-JP</p>
                 </div>
               </div>
-              <div className="w-[50%]">
+              <div className="flex w-[50%] items-center gap-4 text-gray-400">
                 <Progress className="bg-yellow-500" value={13} />
+                13%
               </div>
             </div>
             <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                <GlobeAltIcon className="h-8 w-8 flex-none text-gray-400" />
+              <div className="flex">
+                <GlobeAltIcon className="h-10 w-10 flex-none text-rose-400" />
                 <div>
-                  <p className="text-md px-4 font-semibold text-gray-300">
+                  <p className="px-4 text-sm font-semibold text-gray-300">
                     Malaysia
                   </p>
                   <p className="px-4 text-sm  text-gray-400/50">WF-MY</p>
                 </div>
               </div>
-              <div className="w-[50%]">
+              <div className="flex w-[50%] items-center gap-4 text-gray-400">
                 <Progress className="bg-rose-400" value={10} />
+                10%
               </div>
             </div>
           </div>
         </div>
         {/* 3rd col */}
         <div className="col-span-1 flex flex-col gap-4 rounded-md bg-gray-700/20 p-4">
-          <h2 className="pt-2 text-gray-400">Recent Activity</h2>
+          <div className="flex justify-between">
+            <h2 className="pt-2 text-gray-400">Recent Activity</h2>
+            <EllipsisVerticalIcon className="h-6 w-6 self-end text-gray-400" />
+          </div>
           <RecentActivity />
         </div>
       </div>
