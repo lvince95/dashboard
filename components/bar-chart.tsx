@@ -31,13 +31,13 @@ const data = {
       label: "Expected",
       data: labels.map(() => faker.number.int({ min: 0, max: 1000 })),
       borderColor: "rgb(255, 99, 132)",
-      backgroundColor: "rgba(255, 99, 132, 0.5)",
+      backgroundColor: "rgba(255, 99, 132, 0.6)",
     },
     {
       label: "Actual",
       data: labels.map(() => faker.number.int({ min: 0, max: 1000 })),
       borderColor: "rgb(53, 162, 235)",
-      backgroundColor: "rgba(53, 162, 235, 0.5)",
+      backgroundColor: "rgba(53, 162, 235, 0.6)",
     },
   ],
 };

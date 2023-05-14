@@ -12,11 +12,11 @@ export default function DashboardActivityPage({ params }: Props) {
   return (
     <>
       <div className="border-t border-white/10 pt-11">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <h2 className="px-4 text-base font-semibold leading-7 text-white sm:px-6 lg:px-8">
             Latest activity
           </h2>
-          <DatePickerWithRange className="mr-6" />
+          <DatePickerWithRange className="ml-4 mr-6 sm:ml-0" />
         </div>
         <table className="mt-6 w-full whitespace-nowrap text-left">
           <colgroup>

@@ -94,9 +94,7 @@ const options = {
       },
     },
     title: {
-      display: true,
-      text: "Damage over Time",
-      color: "#94a3b8",
+      display: false,
     },
   },
   scales: {
@@ -123,11 +121,11 @@ export default function DashboardOverviewPage({ params }: Props) {
   return (
     <>
       <div className="border-t border-white/10 pt-11">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <h2 className="px-4 text-base font-semibold leading-7 text-white sm:px-6 lg:px-8">
             Damage over Time
           </h2>
-          <DatePickerWithRange className="mr-6" />
+          <DatePickerWithRange className="ml-4 mr-6 sm:ml-0" />
         </div>
         <div className="relative mt-8 h-[60vh] border-y border-white/10 bg-gray-700/10 p-8">
           <Line options={options} data={data} />
