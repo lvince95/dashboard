@@ -57,26 +57,16 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {deployment.environment === "Stopped" && (
-                <div
-                  className={cn(
-                    "bg-gray-400/10 text-gray-400 ring-gray-400/20",
-                    "flex-none rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset"
-                  )}
-                >
-                  {deployment.environment}
-                </div>
-              )}
-              {deployment.environment !== "Stopped" && (
-                <div
-                  className={cn(
-                    "bg-indigo-400/10 text-indigo-400 ring-indigo-400/30",
-                    "flex-none rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset"
-                  )}
-                >
-                  {deployment.environment}
-                </div>
-              )}
+              <div
+                className={cn(
+                  "flex-none rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset",
+                  deployment.environment === "Stopped"
+                    ? "bg-gray-400/10 text-gray-400 ring-gray-400/20"
+                    : "bg-indigo-400/10 text-indigo-400 ring-indigo-400/30"
+                )}
+              >
+                {deployment.environment}
+              </div>
 
               <ChevronRightIcon
                 className="h-5 w-5 flex-none text-gray-400"

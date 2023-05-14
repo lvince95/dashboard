@@ -46,17 +46,16 @@ export default function DashboardLayout({
             </p>
           </div>
 
-          {deployment.environment === "Stopped" && (
-            <div className="order-first ml-8 flex-none rounded-full bg-gray-400/10 px-2 py-1 text-xs font-medium text-gray-400  ring-1 ring-inset ring-gray-400/20 sm:order-none">
-              {deployment.environment}
-            </div>
-          )}
-
-          {deployment.environment !== "Stopped" && (
-            <div className="order-first ml-8 flex-none rounded-full bg-indigo-400/10 px-2 py-1 text-xs font-medium text-indigo-400 ring-1 ring-inset ring-indigo-400/30 sm:order-none">
-              {deployment.environment}
-            </div>
-          )}
+          <div
+            className={cn(
+              "order-first flex-none rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset sm:order-none",
+              deployment.environment === "Stopped"
+                ? "bg-gray-400/10 text-gray-400 ring-gray-400/20"
+                : "bg-indigo-400/10 text-indigo-400 ring-indigo-400/30"
+            )}
+          >
+            {deployment.environment}
+          </div>
         </div>
 
         {/* Stats */}
