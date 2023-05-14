@@ -200,35 +200,35 @@ export default function SettingsPage() {
 
             <form className="md:col-span-2">
               <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:max-w-xl sm:grid-cols-6">
-                <div className="sm:col-span-3">
+                <div className="col-span-full">
                   <label
                     htmlFor="address-line-1"
                     className="block text-sm font-medium leading-6 text-white"
                   >
-                    Address Line 1
+                    City
                   </label>
                   <div className="mt-2">
                     <input
-                      type="text"
-                      name="address-line-1"
                       id="address-line-1"
+                      name="address-line-1"
+                      type="text"
                       className="block w-full rounded-md border-0 bg-white/5 py-1.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
 
-                <div className="sm:col-span-3">
+                <div className="col-span-full">
                   <label
-                    htmlFor="address-line-2"
+                    htmlFor="address-line-1"
                     className="block text-sm font-medium leading-6 text-white"
                   >
-                    Address Line 2
+                    City
                   </label>
                   <div className="mt-2">
                     <input
-                      type="text"
-                      name="address-line-2"
                       id="address-line-2"
+                      name="address-line-2"
+                      type="text"
                       className="block w-full rounded-md border-0 bg-white/5 py-1.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
                     />
                   </div>
