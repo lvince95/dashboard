@@ -150,8 +150,8 @@ export const MobileSidebar = ({
                       </ul>
                     </li>
                     <li className="-mx-6 mt-auto">
-                      <a
-                        href="#"
+                      <Link
+                        href="/fle/settings"
                         className="flex items-center gap-x-4 px-6 py-3 text-sm font-semibold leading-6 text-white hover:bg-gray-800"
                       >
                         <Image
@@ -163,7 +163,7 @@ export const MobileSidebar = ({
                         />
                         <span className="sr-only">Your profile</span>
                         <span aria-hidden="true">Vincent Lim</span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </nav>
