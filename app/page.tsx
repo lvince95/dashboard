@@ -92,6 +92,7 @@ export default function Page() {
           className="absolute inset-0 h-full w-full object-cover"
           src="/wind-turbine.webp"
           alt=""
+          placeholder="blur"
           fill={true}
         />
       </div>
