@@ -33,20 +33,6 @@ const projects = [
     members: 8,
     bgColor: "bg-green-500",
   },
-  {
-    name: "Taiwan",
-    initials: "TW",
-    href: "#",
-    members: 4,
-    bgColor: "bg-blue-500",
-  },
-  {
-    name: "Japan",
-    initials: "JP",
-    href: "#",
-    members: 6,
-    bgColor: "bg-rose-600",
-  },
 ];
 
 export const RegionGroup = () => {
@@ -60,7 +46,7 @@ export const RegionGroup = () => {
     <div className="border-t border-white/10 pt-4">
       <ul
         role="list"
-        className="mt-3 grid grid-cols-2 gap-4 sm:grid-cols-2 sm:gap-6 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6"
+        className="mt-3 grid grid-cols-2 gap-4 sm:grid-cols-2 sm:gap-6 md:grid-cols-4"
       >
         {projects.map((project, index) => (
           <li
