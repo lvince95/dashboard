@@ -68,12 +68,7 @@ export function BarChart() {
         },
       },
       title: {
-        display: true,
-        text: "Failures by Month",
-        color: "#94a3b8",
-        font: {
-          size: 24,
-        },
+        display: false,
       },
     },
     scales: {

@@ -6,7 +6,7 @@ import { Doughnut } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export const data = {
+const data = {
   labels: ["Asia", "Europe", "North America", "Taiwan", "Japan"],
   datasets: [
     {
@@ -31,7 +31,7 @@ export const data = {
   ],
 };
 
-export const options = {
+const options = {
   maintainAspectRatio: false,
   responsive: true,
   plugins: {
@@ -42,12 +42,7 @@ export const options = {
       },
     },
     title: {
-      display: true,
-      text: "Failures by Region",
-      color: "#94a3b8",
-      font: {
-        size: 24,
-      },
+      display: false,
     },
   },
 };

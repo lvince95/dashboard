@@ -48,7 +48,7 @@ export default function Page() {
         {stats.map((stat) => (
           <div
             key={stat.name}
-            className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2 rounded-md bg-gray-700/20 px-4 py-10 sm:px-6 xl:px-8"
+            className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2 rounded-md bg-gray-700/20 px-4 py-8 sm:px-6 xl:px-8"
           >
             <dt className="text-sm font-medium leading-6 text-gray-400">
               {stat.name}
@@ -70,19 +70,19 @@ export default function Page() {
         ))}
       </dl>
       <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-5">
-        <div className="col-span-1 flex rounded-md bg-gray-700/20 p-4 lg:col-span-3">
+        <div className="col-span-1 flex flex-col rounded-md bg-gray-700/20 p-4 lg:col-span-3">
+          <h2 className="py-2 text-gray-400">Damage by Month</h2>
           <BarChart />
         </div>
-        <div className="col-span-1 flex items-center rounded-md bg-gray-700/20 lg:col-span-2">
+        <div className="col-span-1 flex flex-col rounded-md bg-gray-700/20 p-4 lg:col-span-2">
+          <h2 className="py-2 text-gray-400">Damage by Region</h2>
           <DoughnutChart />
         </div>
       </div>
       <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-3">
         {/* Energy Line Chart */}
         <div className="col-span-1 flex flex-col gap-4 rounded-md bg-gray-700/20 p-4">
-          <h2 className="px-4 py-2 text-xl font-bold text-gray-400">
-            Energy Generated
-          </h2>
+          <h2 className="py-2 text-gray-400">Energy Generated</h2>
           <AreaChart />
           <div className="mt-4 flex justify-between px-2">
             <p className="text-sm font-medium leading-6 text-gray-300">
@@ -102,12 +102,8 @@ export default function Page() {
 
         {/* 2nd col */}
         <div className="col-span-1 flex flex-col gap-4 rounded-md bg-gray-700/20 p-4">
-          <h2 className="px-4 pt-2 text-xl font-bold text-gray-400">
-            Wind Farm Health
-          </h2>
-          <p className="-mt-4 px-4 font-semibold text-gray-400/50">
-            Average Health: 38%
-          </p>
+          <h2 className="pt-2 text-gray-400">Wind Farm Health</h2>
+          {/* <p className="-mt-4 px-4 text-gray-400/50">Average Health: 38%</p> */}
           <div className="mt-auto flex flex-col gap-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center">
@@ -198,9 +194,7 @@ export default function Page() {
         </div>
         {/* 3rd col */}
         <div className="col-span-1 flex flex-col gap-4 rounded-md bg-gray-700/20 p-4">
-          <h2 className="px-4 pt-2 text-xl font-bold text-gray-400">
-            Recent Activity
-          </h2>
+          <h2 className="pt-2 text-gray-400">Recent Activity</h2>
           <RecentActivity />
         </div>
       </div>
